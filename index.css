@@ -1,0 +1,4 @@
+.banner h1{
+  background-image: linear-gradient(rgba(24, 78, 225, 0.95),
+            rgba(65, 81, 187, 0.95)), url("/assets/images/resister-img.jpg");   
+}

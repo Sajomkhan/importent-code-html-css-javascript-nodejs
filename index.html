@@ -5,23 +5,39 @@
 
 <body>
   <h1>Time Greeting Coding</h1>
-  <P id="greetings"></P>
-  
+  <P id="greetings"></P>  
 <script>
     var myDate = new Date();
     var hrs = myDate.getHours();
-
     var greet;
-
     if (hrs < 12)
       greet = 'Good Morning';
     if (hrs >= 12 && hrs <= 17)
       greet = 'Good Afternoon';
     if (hrs >= 17 && hrs <= 24)
       greet = 'Good Evening';
-
+  
     document.getElementById('greetings').innerHTML='<b>'+greet+'</b>';
 </script>
+  
+<button 
+          class="btn btn-success btn-lg me-3"
+          onclick="location.href='https://drive.google.com/drive/folders/1SntRPtOow54yhXkYnX-Yn6b8CDT5ftd3?usp=share_link'"
+          >
+          <i class="fas fa-play me-2"></i>
+          Learn More
+</button>
+            <!-- tooltip -->
+<button 
+          class="btn btn-primary btn-lg" 
+          data-bs-toggle="tooltip" data-bs-placement="right"
+          title="Click here to see information"
+          onclick="window.open('https://drive.google.com/drive/folders/1SntRPtOow54yhXkYnX-Yn6b8CDT5ftd3?usp=share_link')"
+          class="request-callback"
+          >
+            <i class="fab fa-youtube me-2"></i>
+          Subscribe
+</button>
 
 </body>
 </html>
